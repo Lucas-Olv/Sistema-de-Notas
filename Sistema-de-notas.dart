@@ -9,6 +9,7 @@ main() {
   double notaAlunoDouble = 0.0;
   final double frequenciaMin = 75;
   final double notaMin = 70;
+  final double notaRecuperacao= 50;
 
   // Pergunta e armazena o nome do aluno.
   stdout.write("Digite o nome do aluno: ");
@@ -31,6 +32,13 @@ main() {
 
   } else {
 
+    if (notaAlunoDouble >= notaRecuperacao) {
+
+      print("O aluno $nomeAluno obteve frequência de $frequenciaAluno horas e nota de $notaAluno pontos. Portanto está de RECUPERAÇÃO!");
+      print("Estude pois a recuperação começará em breve.");
+
+    }else {
+
       print("O aluno $nomeAluno obteve frequência de $frequenciaAluno horas e nota de $notaAluno pontos. Portanto está REPROVADO(A)!");
       print("Infelizmente você foi reprovado.");
 
@@ -38,3 +46,4 @@ main() {
     
   }
   
+}
