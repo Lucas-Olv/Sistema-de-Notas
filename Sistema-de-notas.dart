@@ -39,9 +39,7 @@ main() {
 
     }else {
 
-      print("O aluno $nomeAluno obteve frequência de $frequenciaAluno horas e nota de $notaAluno pontos. Portanto está REPROVADO(A)!");
-      print("Infelizmente você foi reprovado.");
-
+      print("O aluno $nomeAluno obteve frequência de $frequenciaAluno horas e nota de $notaAluno pontos. Devido a nota do aluno $nomeAluno ser menor que a nota mínima de $notaRecuperacao pontos, o aluno está REPROVADO(A)!");
     }
     
   }
